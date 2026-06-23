@@ -2,47 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sky Dana • Southwest Bases</title>
+  <title>Sky Dana • BASE_NAME Base Pack</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
-<body data-page="home">
+<body data-page="city" data-city="BASE_CODE">
   <header class="sd-header">
     <div class="sd-logo">✈ Sky Dana</div>
     <nav class="sd-nav">
-      <button class="sd-nav-pill" data-filter="all">All Bases</button>
-      <button class="sd-nav-pill" data-filter="primary">Primary</button>
-      <button class="sd-nav-pill" data-filter="satellite">Satellite</button>
+      <a href="../public/index.html">Home</a>
     </nav>
   </header>
 
-  <main class="sd-main">
-    <section class="sd-hero">
-      <h1>Southwest Flight Attendant Bases</h1>
-      <p>Every base. Every layover. Cheap eats, crash pads, transport, and adventures—crew‑ready in one place.</p>
+  <main class="sd-main sd-city-main">
+    <section class="sd-city-hero BASE_BG_CLASS">
+      <h1>BASE_NAME (BASE_CODE)</h1>
+      <p>BASE_SUBTITLE</p>
+    </section>
 
-      <div class="sd-search-bar">
-        <input type="text" id="baseSearch" placeholder="Search base (ATL, DAL, LAS, PHX, BWI...)" />
-        <button id="searchBtn">Search</button>
-      </div>
-
-      <div class="sd-hero-tags">
-        <span class="sd-tag">Cheap Eats</span>
-        <span class="sd-tag">Crash Pads</span>
-        <span class="sd-tag">Transport Hacks</span>
-        <span class="sd-tag">Crew Adventures</span>
+    <section class="sd-section">
+      <h2>Cheap Places to Eat</h2>
+      <div class="sd-list-grid">
+        <!-- JS will populate -->
       </div>
     </section>
 
-    <section class="sd-base-grid" id="baseGrid">
-      <!-- Cards injected by JS -->
+    <section class="sd-section">
+      <h2>Crash Pads & Cheap Living</h2>
+      <div class="sd-list-grid">
+        <!-- JS will populate -->
+      </div>
+    </section>
+
+    <section class="sd-section">
+      <h2>Transportation</h2>
+      <div class="sd-list-grid">
+        <!-- JS will populate -->
+      </div>
+    </section>
+
+    <section class="sd-section">
+      <h2>Cheap & Free Activities</h2>
+      <div class="sd-list-grid">
+        <!-- JS will populate -->
+      </div>
+    </section>
+
+    <section class="sd-section">
+      <h2>Per Diem Calculator</h2>
+      <div class="sd-perdiem">
+        <label>Rate ($/hr):</label>
+        <input type="number" id="perdiemRate" value="3" />
+        <label>Hours:</label>
+        <input type="number" id="perdiemHours" value="24" />
+        <button id="perdiemCalcBtn">Calculate</button>
+        <div id="perdiemResult"></div>
+      </div>
     </section>
   </main>
 
   <footer class="sd-footer">
-    <span>Sky Dana • Layover Intelligence for Flight Attendants</span>
+    <span>Sky Dana • BASE_NAME Base Pack</span>
   </footer>
 
-  <script src="../js/app.js"></script>
+  <script src="../js/BASE_CODE.js"></script>
 </body>
 </html>
