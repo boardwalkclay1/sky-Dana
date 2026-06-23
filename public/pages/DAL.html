@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sky Dana • Dallas (DAL)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body data-page="city" data-city="DAL">
+  <header class="sd-header">
+    <div class="sd-logo">✈ Sky Dana</div>
+    <nav class="sd-nav"><a href="../public/index.html">Home</a></nav>
+  </header>
+
+  <main class="sd-main sd-city-main">
+    <section class="sd-city-hero sd-bg-dal">
+      <h1>Dallas (DAL)</h1>
+      <p>Headquarters base — crew density, crash pads, and big Texas food.</p>
+    </section>
+
+    <section class="sd-section"><h2>Cheap Places to Eat</h2><div class="sd-list-grid" id="eatList"></div></section>
+    <section class="sd-section"><h2>Crash Pads & Cheap Living</h2><div class="sd-list-grid" id="livingList"></div></section>
+    <section class="sd-section"><h2>Transportation</h2><div class="sd-list-grid" id="transportList"></div></section>
+    <section class="sd-section"><h2>Cheap & Free Activities</h2><div class="sd-list-grid" id="activityList"></div></section>
+
+    <section class="sd-section">
+      <h2>Per Diem Calculator</h2>
+      <div class="sd-perdiem">
+        <label>Rate ($/hr):</label><input type="number" id="perdiemRate" value="3" />
+        <label>Hours:</label><input type="number" id="perdiemHours" value="24" />
+        <button id="perdiemCalcBtn">Calculate</button>
+        <div id="perdiemResult"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sd-footer">Sky Dana • Dallas Base Pack</footer>
+  <script src="../js/DAL.js"></script>
+</body>
+</html>
